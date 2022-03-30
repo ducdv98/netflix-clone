@@ -1,0 +1,109 @@
+#home-page {
+  @apply w-full h-full bg-black text-white;
+
+  .story-card {
+
+    &:not(:first-child) {
+      padding: 70px 45px;
+    }
+
+    &:not(:last-child ) {
+      @apply border-dark-gray border-b-8 box-content
+    }
+
+    @apply relative;
+
+    .title {
+      @apply text-4xl font-semibold;
+    }
+
+    .subtitle {
+      @apply text-2-5xl my-4 font-medium;
+    }
+  }
+
+  .header-wrapper {
+    @apply pt-5;
+    background: url('/assets/images/bg.jpg') no-repeat center center/cover;
+    @apply relative w-full;
+    height: calc(100vh + 1px);
+
+    .banner {
+      @apply flex flex-col w-full h-full;
+    }
+
+    .banner::after {
+      @apply absolute top-0 left-0 w-full h-full;
+      content: '';
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: inset 120px 100px 250px rgba(0, 0, 0, 0.5), inset -120px -100px 250px rgba(0, 0, 0, 0.5);
+    }
+
+    .banner-header {
+      @apply relative h-10 flex flex-row justify-between items-center mx-14;
+      z-index: 2;
+    }
+
+    .btn-sign-in {
+      @apply rounded-sm bg-red px-2 py-1 text-sm cursor-pointer font-thin;
+    }
+
+    .banner-content {
+      max-width: 950px;
+      @apply relative flex flex-col justify-center items-center z-10 m-auto max-w-3xl text-center;
+
+      .title {
+        max-width: 500px;
+        @apply text-5xl;
+      }
+
+      .email-form {
+        @apply mt-5 h-14 flex flex-row;
+
+        input {
+          @apply h-full rounded-sm w-full outline-0 ring-0 text-black text-xs px-2;
+          max-width: 500px;
+          width: 478px;
+        }
+
+        .btn-email-form-submit {
+          @apply bg-red h-full px-4 rounded-sm flex flex-row items-center text-2xl gap-2;
+        }
+      }
+    }
+  }
+
+  .mobile-app {
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      @apply flex flex-row items-center justify-center;
+    }
+
+    .description {
+      width: 42%;
+      @apply flex flex-col;
+
+      a {
+        @apply block flex gap-2;
+      }
+    }
+
+    .img {
+      width: 48%;
+    }
+  }
+
+  .faq {
+    .title {
+      @apply text-center;
+    }
+
+    .faq-list {
+      width: 75%;
+      max-width: 615px;
+      @apply my-8 mx-auto;
+    }
+  }
+}
