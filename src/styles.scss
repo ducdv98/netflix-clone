@@ -1,5 +1,18 @@
-@import "~bulma/sass/utilities/initial-variables";
-@import "~bulma/bulma";
+@import 'ng-zorro-antd/style/index.min.css';
+@import 'ng-zorro-antd/collapse/style/index.min.css';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: "NetflixSans";
+  src: local("NetflixSans"), url(./assets/fonts/Netflix-Sans-Light.otf) format("truetype");
+}
+
+html, body {
+  font-family: "NetflixSans", Arial, Helvetica, sans-serif;
+}
 
 .pre-bootstrapping-container {
   @apply w-full h-full relative;

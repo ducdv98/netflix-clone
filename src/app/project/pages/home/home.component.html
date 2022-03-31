@@ -1,1 +1,43 @@
-<p>home works!</p>
+<div id="home-page">
+  <section class="header-wrapper story-card">
+    <header class="banner">
+      <div class="banner-header">
+        <app-svg-icon name="logo" [size]="130" class="text-red"></app-svg-icon>
+        <a class="btn-sign-in">Sign In</a>
+      </div>
+
+      <div class="banner-content">
+        <div class="title">Unlimited movies, TV shows, and more.</div>
+        <div class="subtitle">Watch anywhere. Cancel anytime.</div>
+        <div>Ready to watch? Enter your email to create or restart your membership.</div>
+
+        <form class="email-form">
+          <label>
+            <input type="email" placeholder="Email address">
+          </label>
+          <button class="btn-email-form-submit" type="submit">
+            <span>Get started</span>
+            <app-svg-icon name="chevron" [size]="24" fill="#fff"></app-svg-icon>
+          </button>
+        </form>
+      </div>
+    </header>
+  </section>
+  <section class="story-card mobile-app">
+    <div class="container">
+      <div class="description">
+        <div class="title">Have an Android Phone? Get our new free plan!</div>
+        <div class="subtitle">Watch a selection of new movies and TV shows without adding any payment details!</div>
+        <a href="#">
+          <span>Get the app</span>
+          <app-svg-icon name="chevron" [size]="24" fill="#fff"></app-svg-icon>
+        </a>
+      </div>
+
+      <div class="img">
+        <img src="assets/images/mobile.jpg"/>
+      </div>
+    </div>
+  </section>
+</div>
+

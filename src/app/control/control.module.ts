@@ -5,6 +5,10 @@ import { SvgIconComponent } from './svg-icon/svg-icon.component';
 
 @NgModule({
   declarations: [SvgDefinitionsComponent, SvgIconComponent],
+  exports: [
+    SvgIconComponent,
+    SvgDefinitionsComponent
+  ],
   imports: [
     CommonModule
   ]
